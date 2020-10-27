@@ -8,6 +8,7 @@ import photo6 from "../assets/images/collage20.jpg";
 
 let store = {
     _state: {
+        key: { key:'AIzaSyA1mLopmaoMwjUyiE3mJyW1WgXwvf6B0xk' },
         servicePage: {
             links: [
                 { id: 1, text: 'Book restoration', photo: photo1 , link: "/restorations"},

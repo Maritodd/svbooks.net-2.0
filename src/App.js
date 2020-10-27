@@ -21,7 +21,7 @@ function App(props) {
             <Header/>
             <Route exact path={"/home"} render={() => <HomePage/>}/>
             <Redirect from='/' to='/home'/>
-            <Route path={"/contact"} render={() => <Contact/>}/>
+            <Route path={"/contact"} render={() => <Contact store={props.store._state}/>}/>
             <Route path={"/services"} render={() => <Services store={props.store._state}/>}/>
             <Route path={"/restorations"} render={() => <Repair store={props.store._state}/>}/>
             <Route path={"/bibles"} render={() => <FamilyBibles store={props.store._state}/>}/>

@@ -5,12 +5,12 @@ import mail from "../../assets/images/social3.svg";
 import {ReactCompareSlider} from "react-compare-slider";
 
 
-const Contact = () => {
+const Contact = (props) => {
     return (
         <div className="contact">
             <span className="contact-title tracking-in-contract">find us</span>
             <div className="contact-map" data-aos="fade-up" data-aos-duration="3000">
-                <Map/>
+                <Map store={props.store}/>
             </div>
             <div className="contact-page" data-aos="fade-left"  data-aos-duration="3000">
                 <span className="contact-page__subtitle">Contact us</span>

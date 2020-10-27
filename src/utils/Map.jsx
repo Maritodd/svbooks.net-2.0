@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const Marker = () => (
+const Marker = (props) => (
     <div className="pin"></div>
 );
 
@@ -13,12 +13,12 @@ class Map extends React.Component {
         },
         zoom: 16
     };
-
+    state = this.props.store.key;
     render() {
         return (
             <div className="map" >
                 <GoogleMapReact
-                    bootstrapURLKeys={{key: 'AIzaSyA1mLopmaoMwjUyiE3mJyW1WgXwvf6B0xk'}}
+                    bootstrapURLKeys={this.state}
                     defaultCenter={this.props.center}
                     defaultZoom={this.props.zoom}
                 >
