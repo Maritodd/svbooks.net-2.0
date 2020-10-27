@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import Slider from 'infinite-react-carousel';
-import {NavLink} from "react-router-dom";
+
 
 export default class CustomSlider extends Component {
 
-    state = this.props.store.servicePage.service;
 
-    render()
-    {
+    state = this.props.store.servicePage;
+
+    render() {
         const settings = {
             adaptiveHeight: true,
             autoplay: true,
@@ -16,13 +16,15 @@ export default class CustomSlider extends Component {
             overScan: 1,
             slidesToShow: 2
         };
+        debugger
+
         return (
             <div>
                 <Slider {...settings}>
                     {
-                        this.state.map(s => <div key={s.id}>
+                         this.state.period.map(e => <div key={e.id}>
                             <div className="slider-container">
-                                <img className="slider-container__img" src={s.photo} alt="photo"/>
+                                <img className="slider-container__img" src={e.photo} alt="photo"/>
                             </div>
                         </div>)
                     }

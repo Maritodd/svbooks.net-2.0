@@ -23,6 +23,17 @@ let store = {
                 { id: 5, photo: photo5},
                 { id: 6, photo: photo6},
             ],
+            period: [
+                { id: 1, photo: photo1},
+                { id: 2, photo: photo2},
+                { id: 3, photo: photo3},
+
+            ],
+            design: [
+                { id: 1, photo: photo4},
+                { id: 2, photo: photo5},
+                { id: 3, photo: photo6},
+            ]
         },
     },
 

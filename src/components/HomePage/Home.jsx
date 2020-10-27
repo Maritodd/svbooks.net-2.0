@@ -5,7 +5,7 @@ import photo2 from "../../assets/images/collage20.jpg"
 import photo3 from "../../assets/images/slava.jpg"
 import photo4 from "../../assets/images/homepage(2).jpg"
 import photo5 from "../../assets/images/boxcollage.jpg"
-import photo6 from "../../assets/images/collage20.jpg"
+
 
 const HomePage = (props) => {
     return (

@@ -10,6 +10,7 @@ import "./style.scss";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Repair from "./components/Services/ListSevices/Repair";
+import FamilyBibles from "./components/Services/ListSevices/FamilyBibles";
 
 AOS.init();
 
@@ -23,6 +24,7 @@ function App(props) {
             <Route path={"/contact"} render={() => <Contact/>}/>
             <Route path={"/services"} render={() => <Services store={props.store._state}/>}/>
             <Route path={"/restorations"} render={() => <Repair store={props.store._state}/>}/>
+            <Route path={"/bibles"} render={() => <FamilyBibles store={props.store._state}/>}/>
             <Route path={"/about"} render={() => <About/>}/>
             <Footer/>
         </div>

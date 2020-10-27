@@ -1,7 +1,7 @@
 import React from 'react';
 import photo from "../../assets/images/homepage(2).jpg"
 import photo1 from "../../assets/images/homepage1.jpg"
-import {ReactCompareSlider} from "react-compare-slider";
+
 
 const About = () => {
     return (
