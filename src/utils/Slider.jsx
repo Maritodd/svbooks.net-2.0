@@ -4,8 +4,7 @@ import Slider from 'infinite-react-carousel';
 
 export default class CustomSlider extends Component {
 
-
-    state = this.props.store.servicePage;
+    state = this.props.store.service;
 
     render() {
         const settings = {
@@ -16,13 +15,12 @@ export default class CustomSlider extends Component {
             overScan: 1,
             slidesToShow: 2
         };
-        debugger
 
         return (
             <div>
                 <Slider {...settings}>
                     {
-                         this.state.period.map(e => <div key={e.id}>
+                         this.state.map(e => <div key={e.id}>
                             <div className="slider-container">
                                 <img className="slider-container__img" src={e.photo} alt="photo"/>
                             </div>

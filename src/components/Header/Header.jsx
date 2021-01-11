@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 import face from "../../assets/images/social1.svg";
 import mail from "../../assets/images/social.svg";
+import BurgerMenu from "./Burger";
 
 
 const Header = () => {
@@ -42,10 +43,14 @@ const Header = () => {
                         <a href="https://www.facebook.com/Book-Restoration-Designs-LLC-2023844377712950/"
                            target="_blank"><img className="sidebar-container__link slide-in-left" src={face}
                                                 alt="facebook"/></a>
-                        {/*<a href="tel:(224)616-4698 " target="_blank"><img className="sidebar-container__link slide-in-left" src={messenger} alt="messenger"/></a>*/}
                         <a href="mailto:sv_books@yahoo.com" target="_blank"><img
                             className="sidebar-container__link slide-in-left" src={mail} alt="mail"/></a>
                     </div>
+                </div>
+            </div>
+            <div  className="burger">
+                <div className="burger-menu">
+                    <BurgerMenu />
                 </div>
             </div>
         </div>

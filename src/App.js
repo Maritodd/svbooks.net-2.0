@@ -11,6 +11,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Repair from "./components/Services/ListSevices/Repair";
 import FamilyBibles from "./components/Services/ListSevices/FamilyBibles";
+import StorageBox from "./components/Services/ListSevices/StorageBoxes";
+import MapsPage from "./components/Services/ListSevices/Maps";
 
 AOS.init();
 
@@ -25,6 +27,8 @@ function App(props) {
             <Route path={"/services"} render={() => <Services store={props.store._state}/>}/>
             <Route path={"/restorations"} render={() => <Repair store={props.store._state}/>}/>
             <Route path={"/bibles"} render={() => <FamilyBibles store={props.store._state}/>}/>
+            <Route path={"/maps"} render={() => <MapsPage store={props.store._state}/>}/>
+            <Route path={"/boxes"} render={() => <StorageBox store={props.store._state}/>}/>
             <Route path={"/about"} render={() => <About/>}/>
             <Footer/>
         </div>

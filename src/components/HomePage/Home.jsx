@@ -35,20 +35,20 @@ const HomePage = (props) => {
                                     />
                                 }
             />
-            <div className="home-staff">
-                <div className="home-staff__block">
-                    <img className="home-staff__block_img first-photo"  src={photo3} alt="photo"/>
-                    <span>Hello</span>
-                </div>
-                <div className="home-staff__block">
-                    <img className="home-staff__block_img second-photo" src={photo4} alt="photo"/>
-                    <span>Hello</span>
-                </div>
-                <div className="home-staff__block">
-                    <img className="home-staff__block_img third-photo" src={photo5} alt="photo"/>
-                    <span>Hello</span>
-                </div>
-            </div>
+            {/*<div className="home-staff">*/}
+            {/*    <div className="home-staff__block">*/}
+            {/*        <img className="home-staff__block_img first-photo"  src={photo3} alt="photo"/>*/}
+            {/*        <span>Hello</span>*/}
+            {/*    </div>*/}
+            {/*    <div className="home-staff__block">*/}
+            {/*        <img className="home-staff__block_img second-photo" src={photo4} alt="photo"/>*/}
+            {/*        <span>Hello</span>*/}
+            {/*    </div>*/}
+            {/*    <div className="home-staff__block">*/}
+            {/*        <img className="home-staff__block_img third-photo" src={photo5} alt="photo"/>*/}
+            {/*        <span>Hello</span>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     );
 }
