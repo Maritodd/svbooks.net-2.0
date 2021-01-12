@@ -6,7 +6,7 @@ import photo1 from "../../assets/images/homepage1.jpg"
 const About = () => {
     return (
         <div className="about">
-            <span className="about-title tracking-in-contract">Who we are</span>
+            <span className="about-title ">Who we are</span>
             <div className="about-text " data-aos="zoom-in-right" data-aos-duration="1000">In 1996 Slava (Vyacheslav) Vovkovskiy immigrated to the United States with his family.
                 In 1997, he began theology studies at Holy Trinity Seminary, part of State University of New York,
                 Albany. At the same time, he began work in the book restoration bindery at the Holy Trinity Monastery in

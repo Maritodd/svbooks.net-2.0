@@ -7,7 +7,7 @@ const Services = (props) => {
 
     return <div>
         <div className="services">
-            <span className="services-title tracking-in-contract">Service links</span>
+            <span className="services-title ">Service links</span>
             <div className="services-block">
                 {
                     state.map(s => <div key={s.id}>

@@ -8,7 +8,7 @@ import {ReactCompareSlider} from "react-compare-slider";
 const Contact = (props) => {
     return (
         <div className="contact">
-            <span className="contact-title tracking-in-contract">find us</span>
+            <span className="contact-title ">find us</span>
             <div className="contact-map" data-aos="fade-up" data-aos-duration="3000">
                 <Map store={props.store}/>
             </div>
