@@ -625,22 +625,6 @@ $textcolor: #faf0dc;
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
-
-.scale-up-ver-bottom {
-  animation: scale-up-ver-bottom 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-@keyframes scale-up-ver-bottom {
-  0% {
-    transform: scaleY(0.4);
-    transform-origin: 0% 100%;
-  }
-  100% {
-    transform: scaleY(1);
-    transform-origin: 0% 100%;
-  }
-}
-
 .scale-up-hor-center {
   animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
