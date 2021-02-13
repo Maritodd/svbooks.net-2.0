@@ -16,7 +16,7 @@ const MapsPage = (props) => {
                 <Slider store={props.store.maps}/>
             </div>
             <div className="repair-container">
-                <h2 className="repair-container__block_name">We also perform different types of bindings</h2>
+                <h2 className="repair-container__block_name">We also perform different types of restoration</h2>
                 <div className="repair-container__block">
                     <h3 className="repair-container__block_name">Deacidification</h3>
                     <div className="repair-container__block_item">

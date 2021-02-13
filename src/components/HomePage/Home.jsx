@@ -1,8 +1,9 @@
 import React from 'react';
 import {ReactCompareSlider, ReactCompareSliderImage} from "react-compare-slider";
-import photo1 from "../../assets/images/collage18.jpg"
-import photo2 from "../../assets/images/collage20.jpg"
-
+// import photo1 from "../../assets/images/collage18.jpg"
+// import photo2 from "../../assets/images/collage20.jpg"
+import photo1 from "../../assets/images/photoTitle.jpg";
+import photo2 from "../../assets/images/photoTitle1.jpg";
 
 const HomePage = (props) => {
     return (

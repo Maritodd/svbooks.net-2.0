@@ -21,19 +21,19 @@ const About = () => {
                 <div className="block">
                     <span className="block-name">Slava Vovkovskiy</span>
                     <div className="block-name__content">
-                        <span className="block-name__content_num">01</span>
+                        <span className="block-name__content_num">01|</span>
                         <span  className="block-name__content_desc">Book and paper conservator</span>
-                        <span  className="block-name__content_num">02</span>
+                        <span  className="block-name__content_num">02|</span>
                         <span className="block-name__content_desc">Trained at Holy Trinity Orthodox Monastery</span>
-                        <span  className="block-name__content_num">03</span>
+                        <span  className="block-name__content_num">03|</span>
                         <span className="block-name__content_desc">Specialising in Bibles, Atlases and Eastern European Bindings</span>
                     </div>
                     <br/>
                     <span className="block-name">Katrin Vovkovskiy</span>
                     <div className="block-name__content">
-                        <span  className="block-name__content_num">01</span>
+                        <span  className="block-name__content_num">01|</span>
                         <span className="block-name__content_desc">Specialised in Leather bindings, storage boxes, Atlases</span>
-                        <span  className="block-name__content_num">02</span>
+                        <span  className="block-name__content_num">02|</span>
                         <span className="block-name__content_desc">Specialised in cleaning and renewing books and atlases</span>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ const Services = (props) => {
 
     return <div>
         <div className="services">
-            <span className="services-title" data-aos="fade-right">Service links</span>
+            <span className="services-title" data-aos="fade-right">Service links</span><br/>
             <div className="services-block">
                 {
                     state.map(s => <div key={s.id}>

@@ -20,7 +20,7 @@ function App(props) {
 
     return (
         <div className="body">
-            <Header/>
+            <Header store={props.store._state}/>
             <Route exact path={"/home"} render={() => <HomePage/>}/>
             <Redirect from='/' to='/home'/>
             <Route path={"/contact"} render={() => <Contact store={props.store._state}/>}/>

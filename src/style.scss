@@ -141,9 +141,9 @@ $textcolor: #faf0dc;
 
   .sidebar {
     display: grid;
-    grid-template-rows: 1fr 8fr .5fr .75fr .75fr;
+    grid-template-rows: 1fr 6fr .5fr .75fr .75fr;
     grid-template-columns: .5fr .5fr;
-    height: 895px;
+    height: 710px;
     background-color: rgba(1, 1, 1, 0.25);
     border: 1px solid $subcolor;
     border-radius: 3px;
@@ -260,7 +260,7 @@ $textcolor: #faf0dc;
 ///////////////////////////////////////////////////////////////////////////SERVICE/////////////////////////////////////
 .services {
   display: grid;
-  grid-template-rows:  1.1fr 10fr;
+  grid-template-rows:  1.3fr 10fr;
   grid-template-columns:  .2fr 1fr 1fr .5fr;
   min-height: 900px;
   grid-gap: 50px;
@@ -277,8 +277,6 @@ $textcolor: #faf0dc;
     grid-row: 2/5;
     grid-column: 2/5;
     grid-row-gap: 50px;
-
-
   }
 
   &-container {
@@ -307,9 +305,8 @@ $textcolor: #faf0dc;
 }
 
 .slider-container {
-
   &__img {
-    width: 99%;
+    width: 100%;
   }
 }
 
@@ -318,7 +315,7 @@ $textcolor: #faf0dc;
 .about {
   display: grid;
   grid-template-columns: .17fr .7fr 1fr .25fr;
-  grid-template-rows: .46fr 1fr 1fr .3fr;
+  grid-template-rows: .55fr 1fr 1fr .3fr;
   min-height: 900px;
   grid-gap: 50px;
 
@@ -494,7 +491,7 @@ $textcolor: #faf0dc;
     min-height: 25px;
     color: $textcolor;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 15px;
     width: 97%;
     display: grid;
     grid-template-columns: .1fr 1fr 1fr .1fr;
@@ -563,7 +560,7 @@ $textcolor: #faf0dc;
 .repair {
   display: grid;
   grid-template-columns: .25fr 1fr 1fr .2fr;
-  grid-template-rows: .1fr .05fr .42fr 1fr .1fr;
+  grid-template-rows: .1fr .05fr .5fr .5fr .1fr;
   min-height: 900px;
 
   &-img {
@@ -572,6 +569,7 @@ $textcolor: #faf0dc;
   &-title {
     grid-row: 2/3;
     grid-column: 2/5;
+    align-self: center;
     &__item {
       @extend %title-template;
     }
@@ -580,8 +578,8 @@ $textcolor: #faf0dc;
   &-slider {
     grid-column: 2/5;
     grid-row: 3/4;
-    width: 95%;
-
+    width: 80%;
+    justify-self: center;
   }
 
   &-container {
@@ -602,18 +600,85 @@ $textcolor: #faf0dc;
     }
   }
 }
-
-
-
+///////////////////////////////////////////LOGO??////////////////////////////////////////////////////
+.logo {
+  grid-template-columns: 1fr .8fr 1fr;
+  &-block {
+    grid-column: 3/4;
+  }
+}
+///////////////////////////////////////////??BURGER MENU??////////////////////////////////////////////////////
 .burger {
-  display: none;
-  position: absolute;
-  z-index: 20;
-  background: #ffffff;
-  padding: 50px 30px 0;
-  font-size: 30px;
-  &-menu {
-    height: 100%;
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: $subcolor;
+  }
+  .bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: $subcolor;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: $bgcolor;
+  }
+
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 90%;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: $subcolor;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .burger-container__item {
+    text-decoration: none;
+    font-size: 42px;
+    font-weight: 600;
+    color: $bgcolor;
   }
 }
 

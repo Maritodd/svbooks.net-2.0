@@ -2,7 +2,7 @@ import React from 'react';
 import Map from "../../utils/Map";
 import face from "../../assets/images/social2.svg";
 import mail from "../../assets/images/social3.svg";
-import {ReactCompareSlider} from "react-compare-slider";
+
 
 
 const Contact = (props) => {

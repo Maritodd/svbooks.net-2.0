@@ -13,7 +13,7 @@ export default class CustomSlider extends Component {
             dots: true,
             initialSlide: true,
             overScan: 1,
-            slidesToShow: 2
+            slidesToShow: 1
         };
 
         return (

@@ -3,9 +3,9 @@ import {NavLink} from "react-router-dom";
 import face from "../../assets/images/social1.svg";
 import mail from "../../assets/images/social.svg";
 import BurgerMenu from "./Burger";
+import logo from "../../assets/images/newLogo.png";
 
-
-const Header = () => {
+const Header = (props) => {
     return (<div>
             <div className="header">
                 <header className="header-container">
@@ -48,9 +48,12 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div  className="burger">
-                <div className="burger-menu">
-                    <BurgerMenu />
+            <div className="burger">
+                <BurgerMenu/>
+            </div>
+            <div className="logo">
+                <div className="logo-block">
+                    <img src={logo} alt="logo"/>
                 </div>
             </div>
         </div>

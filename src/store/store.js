@@ -23,6 +23,7 @@ import box1 from "../assets/images/boxcollage.jpg";
 import box2 from "../assets/images/boxcollage2.jpg";
 import map1 from "../assets/images/mapcollage.jpg";
 import map2 from "../assets/images/mapcollage2.jpg";
+import photo22 from "../assets/images/photo1.JPG";
 
 let store = {
     _state: {
@@ -47,7 +48,7 @@ let store = {
         },
         bindings: {
             period: [
-                {id: 1, photo: photo7},
+                {id: 1, photo: photo22},
                 {id: 2, photo: photo4},
                 {id: 3, photo: photo10},
                 {id: 4, photo: photo11},

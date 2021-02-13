@@ -15,7 +15,7 @@ const Repair = (props) => {
                 <Slider store={props.store.restorationBooks}/>
             </div>
             <div className="repair-container">
-                <h2 className="repair-container__block_name">We also perform different types of bindings</h2>
+                <h2 className="repair-container__block_name">We also make different types of bindings</h2>
                 <div className="repair-container__block">
                     <h3 className="repair-container__block_name">Period binding</h3>
                     <div className="repair-container__block_item">
