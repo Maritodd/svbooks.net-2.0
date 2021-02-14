@@ -10,9 +10,9 @@ const About = () => {
             <div className="about-text " data-aos="zoom-in-right" data-aos-duration="1000">In 1996 Slava (Vyacheslav) Vovkovskiy immigrated to the United States with his family.
                 In 1997, he began theology studies at Holy Trinity Seminary, part of State University of New York,
                 Albany. At the same time, he began work in the book restoration bindery at the Holy Trinity Monastery in
-                Jordanville, New York.
+                Jordanville, New York.<br/>
                 Slava apprenticed in the monastery working with monks and older students restoring newly printed and old
-                books such as prayer books, gospels, and theological academic literature.
+                books such as prayer books, gospels, and theological academic literature.<br/>
                 Twenty years later after becoming a master restorer and conservator, he married Katrin. And today,
                 together they have become Book Restoration Designs LLC.
             </div>

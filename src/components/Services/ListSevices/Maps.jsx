@@ -2,7 +2,6 @@ import React from 'react';
 import Slider from "../../../utils/Slider";
 import ModalImage from "react-modal-image";
 
-
 const MapsPage = (props) => {
 
     let state = props.store.bindings;
@@ -10,7 +9,7 @@ const MapsPage = (props) => {
     return (
         <div className="repair">
             <div className="repair-title">
-            <p className="repair-title__item">Map & Print Conservation</p>
+                <p className="repair-title__item">Map & Print Conservation</p>
             </div>
             <div className="repair-slider">
                 <Slider store={props.store.maps}/>

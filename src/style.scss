@@ -579,7 +579,7 @@ $textcolor: #faf0dc;
     grid-column: 2/5;
     grid-row: 3/4;
     width: 80%;
-    justify-self: center;
+    justify-self: start;
   }
 
   &-container {
@@ -634,7 +634,7 @@ $textcolor: #faf0dc;
 
   /* Color/shape of close button cross */
   .bm-cross {
-    background: $bgcolor;
+    background: $subcolor;
   }
 
   /*
@@ -648,9 +648,9 @@ $textcolor: #faf0dc;
 
   /* General sidebar styles */
   .bm-menu {
-    background: $subcolor;
+    background: $bgcolor;
     padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
+    font-size: 1.55em;
   }
 
   /* Morph shape necessary with bubble or elastic */
@@ -678,7 +678,8 @@ $textcolor: #faf0dc;
     text-decoration: none;
     font-size: 42px;
     font-weight: 600;
-    color: $bgcolor;
+    color: $subcolor;
+    border: none;
   }
 }
 
