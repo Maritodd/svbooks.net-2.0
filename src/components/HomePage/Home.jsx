@@ -1,15 +1,17 @@
 import React from 'react';
 import {ReactCompareSlider, ReactCompareSliderImage} from "react-compare-slider";
-// import photo1 from "../../assets/images/collage18.jpg"
-// import photo2 from "../../assets/images/collage20.jpg"
 import photo1 from "../../assets/images/photoTitle.jpg";
 import photo2 from "../../assets/images/photoTitle1.jpg";
+import photo3 from "../../assets/images/slava.jpg";
 
 const HomePage = (props) => {
     return (
         <div className="home">
             <div className="home-title" data-aos="fade-up" data-aos-duration="3000">
                 <h1>Welcome to the Book Restoration Designs LLC.</h1>
+            </div>
+            <div className="home-slava" data-aos="fade-up" data-aos-duration="3000" >
+             <img className="home-slava__item" src={photo3} alt="Slava"/>
             </div>
             <div className="home-container" data-aos="fade-right"  data-aos-duration="3000">
                 <span className="home-container__subtitle">Our Philosophy</span>
@@ -33,20 +35,6 @@ const HomePage = (props) => {
                                     />
                                 }
             />
-            {/*<div className="home-staff">*/}
-            {/*    <div className="home-staff__block">*/}
-            {/*        <img className="home-staff__block_img first-photo"  src={photo3} alt="photo"/>*/}
-            {/*        <span>Hello</span>*/}
-            {/*    </div>*/}
-            {/*    <div className="home-staff__block">*/}
-            {/*        <img className="home-staff__block_img second-photo" src={photo4} alt="photo"/>*/}
-            {/*        <span>Hello</span>*/}
-            {/*    </div>*/}
-            {/*    <div className="home-staff__block">*/}
-            {/*        <img className="home-staff__block_img third-photo" src={photo5} alt="photo"/>*/}
-            {/*        <span>Hello</span>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
         </div>
     );
 }

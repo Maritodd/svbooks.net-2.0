@@ -12,7 +12,7 @@ const Repair = (props) => {
                 <p className="repair-title__item">Book restoration</p>
             </div>
             <div className="repair-slider">
-                <Slider store={props.store.restorationBooks}/>
+                <Slider store={props.store.bindings}/>
             </div>
             <div className="repair-container">
                 <h2 className="repair-container__block_name">We also make different types of bindings</h2>
@@ -20,7 +20,7 @@ const Repair = (props) => {
                     <h3 className="repair-container__block_name">Period binding</h3>
                     <div className="repair-container__block_item">
                         {
-                            state.period.map(s => <div key={s.id}>
+                            state.service.map(s => <div key={s.id}>
                                 <ModalImage className="repair-img"
                                             small={s.photo}
                                             medium={s.photo}

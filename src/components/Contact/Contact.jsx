@@ -4,7 +4,6 @@ import face from "../../assets/images/social2.svg";
 import mail from "../../assets/images/social3.svg";
 
 
-
 const Contact = (props) => {
     return (
         <div className="contact">

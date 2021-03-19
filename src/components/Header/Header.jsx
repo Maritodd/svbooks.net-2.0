@@ -3,10 +3,11 @@ import {NavLink} from "react-router-dom";
 import face from "../../assets/images/social1.svg";
 import mail from "../../assets/images/social.svg";
 import BurgerMenu from "./Burger";
-import logo from "../../assets/images/newLogo.png";
+import logo from "../../assets/images/logoSKM.png";
 
 const Header = (props) => {
-    return (<div>
+    return (
+        <div>
             <div className="header">
                 <header className="header-container">
                     <div className="header-container__link">
@@ -17,7 +18,7 @@ const Header = (props) => {
                         <NavLink to={"/services"} activeClassName="active"
                                  className="header-container__item dropdown"><span
                             className="header-container__item_num">02.</span> Services</NavLink>
-                        <div className="dropdown-content scale-up-hor-center">
+                        <div className="dropdown-content ">
                             <NavLink to={"/restorations"} className="dropdown-content__item">Book restoration</NavLink>
                             <NavLink to={"/bibles"} className="dropdown-content__item">Family Bibles</NavLink>
                             <NavLink to={"/maps"} className="dropdown-content__item">Map & Print Conservation</NavLink>
@@ -37,7 +38,7 @@ const Header = (props) => {
             <div className="wrapper">
                 <div className="sidebar">
                     <div className="sidebar-block" data-aos="zoom-in">
-                        <div className="sidebar-block__circle"></div>
+                        <NavLink to={"/home"} className="sidebar-block__circle"></NavLink>
                     </div>
                     <div className="sidebar-container">
                         <a href="https://www.facebook.com/Book-Restoration-Designs-LLC-2023844377712950/"
@@ -49,11 +50,11 @@ const Header = (props) => {
                 </div>
             </div>
             <div className="burger">
-                <BurgerMenu/>
+                <BurgerMenu />
             </div>
             <div className="logo">
                 <div className="logo-block">
-                    <img src={logo} alt="logo"/>
+                    <NavLink to={"/home"}><img className="logo-block__item" src={logo} alt="logo"/></NavLink>
                 </div>
             </div>
         </div>

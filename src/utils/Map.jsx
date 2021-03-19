@@ -1,39 +1,35 @@
-import React from 'react';
-import GoogleMapReact from 'google-map-react';
+import React, {useEffect} from 'react';
+import mapboxgl from 'mapbox-gl';
 
+const Map = (props) => {
 
-const Marker = (props) => (
+    useEffect(() => {
+        getMap();
+    }, [])
 
-<div className="pin"></div>
-
-);
-
-class Map extends React.Component {
-    static defaultProps = {
-        center: {
-            lat: 42.372146,
-            lng: -88.005685
-        },
-        zoom: 16
+    let getMap = () => {
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXRvZGQiLCJhIjoiY2tsZHN1emoyMDd1cjJ2cDBiNW92enZzYyJ9.t5rggHA3Tfoaa_Yjod7wAg';
+        let map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [ -88.006016, 42.372587], // starting position [lng, lat]
+            zoom: 16 // starting zoom
+        });
+        let marker = new mapboxgl.Marker({
+            color: "#DC143C",
+            draggable: true
+        }).setLngLat([-88.006016, 42.372587])
+            .addTo(map);
     };
-    state = this.props.store.key;
 
-
-    render() {
         return (
-            <div className="map" >
-                <GoogleMapReact
-                    bootstrapURLKeys={this.state}
-                    defaultCenter={this.props.center}
-                    defaultZoom={this.props.zoom}
-                >
-                    <Marker lat={42.372587}
-                            lng={-88.006016}
-                    />
-                </GoogleMapReact>
+            <div >
+                <div className="map" id="map"></div>
             </div>
-        );
-    }
+        )
+
+
+
 }
 
 export default Map;

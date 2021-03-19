@@ -4,7 +4,7 @@ import ModalImage from "react-modal-image";
 
 const MapsPage = (props) => {
 
-    let state = props.store.bindings;
+    let state = props.store.maps;
 
     return (
         <div className="repair">
@@ -20,7 +20,21 @@ const MapsPage = (props) => {
                     <h3 className="repair-container__block_name">Deacidification</h3>
                     <div className="repair-container__block_item">
                         {
-                            state.period.map(s => <div key={s.id}>
+                            state.service.map(s => <div key={s.id}>
+                                <ModalImage className="repair-img"
+                                            small={s.photo}
+                                            medium={s.photo}
+                                            alt="Book Restoration Designs LLC."
+                                />;
+                            </div>)
+                        }
+                    </div>
+                </div>
+                <div className="repair-container__block">
+                    <h3 className="repair-container__block_name">Albums</h3>
+                    <div className="repair-container__block_item">
+                        {
+                            state.album.map(s => <div key={s.id}>
                                 <ModalImage className="repair-img"
                                             small={s.photo}
                                             medium={s.photo}
