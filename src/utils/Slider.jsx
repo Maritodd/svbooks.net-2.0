@@ -10,8 +10,8 @@ export default class CustomSlider extends Component {
         const settings = {
             adaptiveHeight: true,
             autoplay: true,
-            dots: true,
-            initialSlide: true,
+            dots: false,
+            initialSlide: 1,
             overScan: 1,
             slidesToShow: 1
         };

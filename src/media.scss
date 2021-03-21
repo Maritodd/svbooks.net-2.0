@@ -343,7 +343,7 @@
 
   .repair {
     grid-template-columns: .1fr 1fr 1fr .1fr;
-    grid-template-rows: .1fr .05fr .25fr 1fr .1fr;
+    grid-template-rows: .2fr .1fr .25fr 3fr .1fr;
 
     &-img {
       width: 97%;
@@ -481,7 +481,7 @@
 
   .repair {
     grid-template-columns: .1fr 1fr 1fr .1fr;
-    grid-template-rows: .05fr .25fr 1fr .1fr;
+    grid-template-rows: .05fr .25fr 2fr .1fr;
 
     &-title {
       grid-row: 1/2;
