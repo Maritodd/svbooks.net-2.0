@@ -61,7 +61,7 @@ import map2 from "../assets/images/mapcollage2.jpg";
 
 let store = {
     _state: {
-        key: {key: ''},
+        key: 'pk.eyJ1IjoibWFyaXRvZGQiLCJhIjoiY2tsZHN1emoyMDd1cjJ2cDBiNW92enZzYyJ9.t5rggHA3Tfoaa_Yjod7wAg',
         servicePage: {
             links: [
                 {id: 1, text: 'Book restoration', photo: photo16, link: "/restorations"},

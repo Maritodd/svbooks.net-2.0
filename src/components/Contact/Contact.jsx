@@ -23,8 +23,8 @@ const Contact = (props) => {
                     <address className="contact-page__block_item">PO Box #7276, Grayslake, IL, 60030</address>
                 </div>
                 <div className="contact-page__socials">
-                    <a href="mailto:sv_books@yahoo.com" target="_blank" ><img className="contact-page__socials_link" src={mail} alt="mail"/></a>
-                    <a href="https://www.facebook.com/Book-Restoration-Designs-LLC-2023844377712950/" target="_blank"><img className="contact-page__socials_link" src={face} alt="facebook"/></a>
+                    <a href="mailto:sv_books@yahoo.com" rel="noopener noreferrer" target="_blank" ><img className="contact-page__socials_link" src={mail} alt="mail"/></a>
+                    <a href="https://www.facebook.com/Book-Restoration-Designs-LLC-2023844377712950/" rel="noopener noreferrer" target="_blank"><img className="contact-page__socials_link" src={face} alt="facebook"/></a>
                 </div>
             </div>
         </div>

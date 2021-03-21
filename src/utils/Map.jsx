@@ -5,10 +5,12 @@ const Map = (props) => {
 
     useEffect(() => {
         getMap();
-    }, [])
+    },)
+
+    const key = props.store.key;
 
     let getMap = () => {
-        mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaXRvZGQiLCJhIjoiY2tsZHN1emoyMDd1cjJ2cDBiNW92enZzYyJ9.t5rggHA3Tfoaa_Yjod7wAg';
+        mapboxgl.accessToken = key;
         let map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',

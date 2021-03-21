@@ -1,4 +1,4 @@
-import React, {Suspense, useEffect, useState} from 'react';
+import React from 'react';
 import Header from "./components/Header/Header";
 import HomePage from "./components/HomePage/Home";
 import Contact from "./components/Contact/Contact";

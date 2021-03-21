@@ -22,7 +22,7 @@ export default class CustomSlider extends Component {
                     {
                          this.state.map(e => <div key={e.id}>
                             <div className="slider-container">
-                                <img className="slider-container__img" src={e.photo} alt="photo"/>
+                                <img className="slider-container__img" src={e.photo} alt="books"/>
                             </div>
                         </div>)
                     }

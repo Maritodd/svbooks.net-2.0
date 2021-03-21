@@ -41,10 +41,10 @@ const Header = (props) => {
                         <NavLink to={"/home"} className="sidebar-block__circle"></NavLink>
                     </div>
                     <div className="sidebar-container">
-                        <a href="https://www.facebook.com/Book-Restoration-Designs-LLC-2023844377712950/"
+                        <a href="https://www.facebook.com/Book-Restoration-Designs-LLC-2023844377712950/" rel="noopener noreferrer"
                            target="_blank"><img className="sidebar-container__link slide-in-left" src={face}
                                                 alt="facebook"/></a>
-                        <a href="mailto:sv_books@yahoo.com" target="_blank"><img
+                        <a href="mailto:sv_books@yahoo.com" rel="noopener noreferrer" target="_blank"><img
                             className="sidebar-container__link slide-in-left" src={mail} alt="mail"/></a>
                     </div>
                 </div>
