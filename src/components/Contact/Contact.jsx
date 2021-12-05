@@ -18,7 +18,6 @@ const Contact = (props) => {
                     <span className="contact-page__block_item">Email: sv_books@yahoo.com</span>
                     <span className="contact-page__block_item">Phone: (224)616-4698 </span>
                     <p className="contact-page__block_item">Address</p>
-                    <address className="contact-page__block_item">Third Lake, IL 60030</address>
                     <address className="contact-page__block_item">United States</address>
                     <address className="contact-page__block_item">PO Box #7276, Grayslake, IL, 60030</address>
                 </div>

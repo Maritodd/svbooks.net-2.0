@@ -1,34 +1,29 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Slider from 'infinite-react-carousel';
 
+const CustomSlider = ({ store }) => {
+    const slides = store.service;
 
-export default class CustomSlider extends Component {
+    const settings = {
+        adaptiveHeight: true,
+        autoplay: true,
+        dots: false,
+        initialSlide: 1,
+        overScan: 1,
+        slidesToShow: 1
+    };
 
-    state = this.props.store.service;
+    return (
+        <Slider {...settings}>
+            {slides.map(slide => (
+                <div key={slide.id}>
+                    <div className="slider-container">
+                        <img className="slider-container__img" src={slide.photo} alt="books" />
+                    </div>
+                </div>
+            ))}
+        </Slider>
+    );
+};
 
-    render() {
-        const settings = {
-            adaptiveHeight: true,
-            autoplay: true,
-            dots: false,
-            initialSlide: 1,
-            overScan: 1,
-            slidesToShow: 1
-        };
-
-        return (
-            <div>
-                <Slider {...settings}>
-                    {
-                         this.state.map(e => <div key={e.id}>
-                            <div className="slider-container">
-                                <img className="slider-container__img" src={e.photo} alt="books"/>
-                            </div>
-                        </div>)
-                    }
-                </Slider>
-            </div>
-        );
-    }
-}
-
+export default CustomSlider;

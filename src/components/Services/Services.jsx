@@ -1,26 +1,24 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
-const Services = (props) => {
+const Services = ({ store }) => {
+    const serviceLinks = store.servicePage.links;
 
-    let state = props.store.servicePage.links;
-
-    return <div>
+    return (
         <div className="services">
-            <span className="services-title" data-aos="fade-right">Service links</span><br/>
+            <span className="services-title" data-aos="fade-right">Service Links</span><br />
             <div className="services-block">
-                {
-                    state.map(s => <div key={s.id}>
-                        <div className="services-container ">
-                            <img className="services-container__img" src={s.photo} alt="logo"/>
-                            <NavLink to={s.link}
-                                     className="services-container__link">{s.text}</NavLink>
+                {serviceLinks.map(service => (
+                    <div key={service.id}>
+                        <div className="services-container">
+                            <img className="services-container__img" src={service.photo} alt="Service Logo" />
+                            <NavLink to={service.link} className="services-container__link">{service.text}</NavLink>
                         </div>
-                    </div>)
-                }
+                    </div>
+                ))}
             </div>
         </div>
-    </div>
-}
+    );
+};
 
 export default Services;

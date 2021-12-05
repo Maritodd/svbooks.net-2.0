@@ -1,37 +1,34 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
 
-const Map = (props) => {
+const Map = ({ store }) => {
+    const mapContainer = useRef(null);
 
     useEffect(() => {
-        getMap();
-    },)
+        mapboxgl.accessToken = store.key;
 
-    const key = props.store.key;
-
-    let getMap = () => {
-        mapboxgl.accessToken = key;
-        let map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [ -88.006016, 42.372587], // starting position [lng, lat]
-            zoom: 16 // starting zoom
+        const map = new mapboxgl.Map({
+            container: mapContainer.current,
+            style: 'mapbox://styles/mapbox/satellite-v9',
+            center: [-88.006016, 42.372587],
+            zoom: 16
         });
-        let marker = new mapboxgl.Marker({
+
+        const marker = new mapboxgl.Marker({
             color: "#DC143C",
             draggable: true
-        }).setLngLat([-88.006016, 42.372587])
+        })
+            .setLngLat([-88.005674, 42.372163])
             .addTo(map);
-    };
 
-        return (
-            <div >
-                <div className="map" id="map"></div>
-            </div>
-        )
+        return () => map.remove();
+    }, [store.key]);
 
-
-
-}
+    return (
+        <div className="map-container">
+            <div className="map" ref={mapContainer} />
+        </div>
+    );
+};
 
 export default Map;
