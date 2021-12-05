@@ -13,6 +13,7 @@ import Repair from "./components/Services/ListSevices/Repair";
 import FamilyBibles from "./components/Services/ListSevices/FamilyBibles";
 import StorageBox from "./components/Services/ListSevices/StorageBoxes";
 import MapsPage from "./components/Services/ListSevices/Maps";
+// import ReactGA from 'react-ga';
 
 AOS.init();
 
