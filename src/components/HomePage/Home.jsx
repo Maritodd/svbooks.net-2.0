@@ -1,10 +1,10 @@
 import React from 'react';
 import {ReactCompareSlider, ReactCompareSliderImage} from "react-compare-slider";
-import photo1 from "../../assets/images/photoTitle.JPG";
-import photo2 from "../../assets/images/photoTitle1.JPG";
+import photo1 from "../../assets/images/photoTitle.jpg";
+import photo2 from "../../assets/images/photoTitle1.jpg";
 import photo3 from "../../assets/images/slava.jpg";
 
-const HomePage = (props) => {
+const HomePage = () => {
     return (
         <div className="home">
             <div className="home-title" data-aos="fade-up" data-aos-duration="3000">
